@@ -1,0 +1,10 @@
+.app{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.flex {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
