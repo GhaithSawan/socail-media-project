@@ -1,0 +1,10 @@
+.FriendList img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.FriendList {
+    width: 100%;
+}
