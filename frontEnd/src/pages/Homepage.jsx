@@ -1,8 +1,13 @@
 import React from 'react'
+import UserCard from '../component/UserCard/UserCard'
+import { CreatePost } from '../component/CreatePost/CreatePost'
 
 const Homepage = () => {
   return (
-    <div>Homepage</div>
+    <div>
+      <UserCard />
+      <CreatePost />
+    </div>
   )
 }
 

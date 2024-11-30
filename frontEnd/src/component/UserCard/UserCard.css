@@ -1,0 +1,37 @@
+.UserCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #181818;
+    color: rgb(140, 140, 140);
+    padding: 25px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px rgb(75, 75, 75);
+}
+
+.UserCard .flex {
+    border-bottom: 1px rgb(57, 57, 57) solid;
+    width: 100%;
+    justify-content: space-between !important;
+}
+
+.UserCard h3 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400 !important;
+}
+
+.UserCard .flex {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.UserCard img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: contain;
+}

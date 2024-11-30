@@ -1,6 +1,7 @@
 .app{
-    height: 100% !important;
+    min-height: 100vh !important;
     width: 100% !important;
+    background-color: #0d0d0d;
 }
 
 .flex {
