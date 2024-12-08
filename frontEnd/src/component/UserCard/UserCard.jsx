@@ -3,7 +3,7 @@ import userimg from "../../assets/download.png";
 import "./UserCard.css"
 const UserCard = () => {
     return (
-        <div className='UserCard '>
+        <div className='UserCard ' style={{borderRadius:"10px"}}>
             <div className='flex pb-2'>
                 <div style={{ display: "flex", alignItems: "center" }}>
                     <img src={userimg} alt="" />

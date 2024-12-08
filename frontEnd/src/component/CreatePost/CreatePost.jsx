@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import img from "../../assets/download.png"
 export const CreatePost = () => {
     return (
-        <div className='CreatePost flex'>
+        <div className='CreatePost flex  m-auto ' style={{ borderRadius: "10px", boxShadow: " 1px 1px 5px 2px rgb(75, 75, 75)" }}>
             <div className="upper flex">
                 <img src={img} alt="" />
             </div>
@@ -19,6 +19,6 @@ export const CreatePost = () => {
                 </Form>
                 <button className='importimgbtn'>image</button>
             </div>
-        </div>
+        </div >
     )
 }
