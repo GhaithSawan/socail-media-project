@@ -1,9 +1,11 @@
 import React from 'react'
-import userimg from "../../assets/download.png";
+import userimg from "../../assets/profilePhoto.jpg";
 import "./UserCard.css"
+import { CiSettings } from "react-icons/ci";
+
 const UserCard = () => {
     return (
-        <div className='UserCard ' style={{borderRadius:"10px"}}>
+        <div className='UserCard ' style={{ borderRadius: "10px" }}>
             <div className='flex pb-2'>
                 <div style={{ display: "flex", alignItems: "center" }}>
                     <img src={userimg} alt="" />
@@ -12,7 +14,8 @@ const UserCard = () => {
                         <span>3 followers</span>
                     </div>
                 </div>
-                <div className="accountSettings">accountSettings</div>
+                <div className="accountSettings"><CiSettings className='icons'/>
+                </div>
             </div>
             <div className="PostsNum flex pb-3">
                 <span>Posts</span>

@@ -9,3 +9,21 @@
     align-items: center !important;
     justify-content: space-between !important;
 }
+.icons{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #181818;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #16cff8;
+    border-radius: 10px;
+
+}
+
+
+/* _____________________responsive */

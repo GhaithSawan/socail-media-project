@@ -5,6 +5,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Navbar.css";
+import { FaRegMoon } from "react-icons/fa";
+import { GoQuestion } from "react-icons/go";
+import { FaRegBell } from "react-icons/fa";
+
 function Mynavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary w-100 px-5">
@@ -26,11 +30,14 @@ function Mynavbar() {
               style={{ maxHeight: '100px', color: "#fff", gap: "20px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}>Home</Nav.Link>
+              <Nav.Link href="#action1" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><FaRegMoon className='icons' />
+              </Nav.Link>
+              <Nav.Link href="#action2" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><GoQuestion className='icons' /></Nav.Link>
+              <Nav.Link href="#action" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><FaRegBell className='icons' /></Nav.Link>
               <NavDropdown title="User info" id="navbarScrollingDropdown" >
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action3">Settings</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action4">Another </NavDropdown.Item>
+                <NavDropdown.Item href="#action4">Log out </NavDropdown.Item>
               </NavDropdown>
             </Nav>
 
