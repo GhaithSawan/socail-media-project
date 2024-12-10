@@ -33,7 +33,7 @@ function Mynavbar() {
               <Nav.Link href="#action1" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><FaRegMoon className='icons' />
               </Nav.Link>
               <Nav.Link href="#action2" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><GoQuestion className='icons' /></Nav.Link>
-              <Nav.Link href="#action" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><FaRegBell className='icons' /></Nav.Link>
+              <Nav.Link href="#action3" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><FaRegBell className='icons' /></Nav.Link>
               <NavDropdown title="User info" id="navbarScrollingDropdown" >
                 <NavDropdown.Item href="#action3">Settings</NavDropdown.Item>
                 <NavDropdown.Divider />
