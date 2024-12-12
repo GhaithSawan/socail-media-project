@@ -2,19 +2,20 @@ import React from 'react'
 import userimg from "../../assets/profilePhoto.jpg";
 import "./UserCard.css"
 import { CiSettings } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 const UserCard = () => {
     return (
         <div className='UserCard ' style={{ borderRadius: "10px" }}>
             <div className='flex pb-2'>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                    <img src={userimg} alt="" />
-                    <div>
-                        <h3 style={{ color: " #fff" }}>ghaith</h3>
-                        <span>3 followers</span>
-                    </div>
-                </div>
-                <div className="accountSettings"><CiSettings className='icons'/>
+                    <Link to={"/Profilepage"} style={{ display: "flex", alignItems: "center" ,width: "100%", textDecoration: "none" }}>
+                        <img src={userimg} alt="" />
+                        <div>
+                            <h3 style={{ color: " #fff" }}>ghaith</h3>
+                            <span style={{color: "rgb(140, 140, 140)"}}>3 followers</span>
+                        </div>
+                    </Link>
+                <div className="accountSettings"><CiSettings className='icons' />
                 </div>
             </div>
             <div className="PostsNum flex pb-3">

@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: 20px;
     background-color: #181818;
-    color: rgb(140, 140, 140);
+    color: rgb(140, 140, 140) !important;
     padding: 25px 20px;
     margin-top: 20px;
     border-radius: 10px;

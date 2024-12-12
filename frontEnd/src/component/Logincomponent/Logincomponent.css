@@ -1,0 +1,36 @@
+.card {
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px 20px;
+    margin: 50px auto;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 0 0 5px 2px #16cff1;
+}
+
+.card .inputs {
+    margin-top: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+}
+.card .inputs label{
+    cursor: pointer;
+}
+
+
+.card .inputs input {
+    margin: 5px 0;
+    padding: 0 5px;
+    width: 100%;
+
+}
+.card .inputs input:focus{
+    border: #16cff1 1px solid;
+    outline: #16cff1 solid 1px;
+}
+#imageInput{
+    display: none;
+}

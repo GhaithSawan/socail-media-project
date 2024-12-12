@@ -8,12 +8,15 @@ import "./Navbar.css";
 import { FaRegMoon } from "react-icons/fa";
 import { GoQuestion } from "react-icons/go";
 import { FaRegBell } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Mynavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary w-100 px-5">
       <Container fluid className='flex Navbar w-100'>
-        <Navbar.Brand href="#" style={{ color: "#16cff8", fontSize: "20px", fontWeight: "500" }}>Social Media</Navbar.Brand>
+        <Link to={"/"} style={{ fontSize: "15px", width: "100%", textDecoration: "none" }}>
+          <Navbar.Brand href="#" style={{ color: "#16cff8", fontSize: "20px", fontWeight: "500" }}>Social Media</Navbar.Brand>
+        </Link>
         <Form className="d-flex col-4">
           <Form.Control
             type="search"
@@ -35,6 +38,10 @@ function Mynavbar() {
               <Nav.Link href="#action2" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><GoQuestion className='icons' /></Nav.Link>
               <Nav.Link href="#action3" style={{ color: "#fff", fontSize: "16px", fontWeight: "500" }}><FaRegBell className='icons' /></Nav.Link>
               <NavDropdown title="User info" id="navbarScrollingDropdown" >
+                <Link to={"/Profilepage"} style={{ fontSize: "15px", width: "100%", textDecoration: "none" }}>
+                  <NavDropdown.Item href="#action3">My account</NavDropdown.Item>
+                </Link>
+                <NavDropdown.Divider />
                 <NavDropdown.Item href="#action3">Settings</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action4">Log out </NavDropdown.Item>

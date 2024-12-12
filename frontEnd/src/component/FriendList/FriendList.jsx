@@ -2,6 +2,7 @@ import React from 'react'
 import "./FriendList.css"
 import img from "../../assets/profilePhoto.jpg"
 import { MdOutlinePersonRemoveAlt1 } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const FriendList = () => {
     return (
@@ -10,10 +11,12 @@ const FriendList = () => {
             <div className='FriendList w-100 '>
                 <div className="Friend flex w-100">
                     <div className='flex'>
-                        <img src={img} alt="" />
-                        <span>Ghaith</span>
+                        <Link to={"/Profilepage"} style={{ width: "100%", textDecoration: "none" }}>
+                            <img src={img} alt="" />
+                            <span style={{ color: "#fff" ,fontWeight:"500" ,fontSize:"17px"}}>Ghaith</span>
+                        </Link>
                     </div>
-                    <span><MdOutlinePersonRemoveAlt1 className='icons'/></span>
+                    <span><MdOutlinePersonRemoveAlt1 className='icons' /></span>
                 </div>
             </div>
         </div>
