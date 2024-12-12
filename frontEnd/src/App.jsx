@@ -6,19 +6,23 @@ import Loginpage from './pages/Loginpage';
 import MyNavbar from './component/Navbar/Navbar';
 import "./App.css"
 import Registerpage from './pages/Registerpage';
+import store from '../projectContext';
 function App() {
   return (
-    <div className='app'>
-      <BrowserRouter>
-        <MyNavbar />
-        <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/Login' element={<Loginpage />} />
-          <Route path='/Register' element={<Registerpage />} />
-          <Route path='/Profilepage/:id' element={<Profilepage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Provider store={store}>
+      <div className='app'>
+        <BrowserRouter>
+          <MyNavbar />
+          <Routes>
+            <Route path='/' element={<Homepage />} />
+            <Route path='/Login' element={<Loginpage />} />
+            <Route path='/Register' element={<Registerpage />} />
+            <Route path='/Profilepage/:id' element={<Profilepage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </Provider>
+
   );
 }
 
