@@ -6,7 +6,9 @@ import Loginpage from './pages/Loginpage';
 import MyNavbar from './component/Navbar/Navbar';
 import "./App.css"
 import Registerpage from './pages/Registerpage';
-import store from '../projectContext';
+import store from './redux/store';
+import Provider from '@reduxjs/toolkit';
+
 function App() {
   return (
     <Provider store={store}>
