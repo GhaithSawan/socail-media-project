@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const FriendList = () => {
     return (
-        <div className='flex p-3' style={{ boxShadow: " 1px 1px 5px 2px rgb(75, 75, 75)", borderRadius: "10px", color: "#fff", flexDirection: "column", backgroundColor: "#181818" }}>
+        <div className='flex p-3 w-100' style={{ boxShadow: " 1px 1px 5px 2px rgb(75, 75, 75)", borderRadius: "10px", color: "#fff", flexDirection: "column", backgroundColor: "#181818" }}>
             <h4>Friend list</h4>
             <div className='FriendList w-100 '>
                 <div className="Friend flex w-100">

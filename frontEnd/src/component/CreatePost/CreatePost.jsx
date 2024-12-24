@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import img from "../../assets/profilePhoto.jpg"
 import { CiImageOn } from "react-icons/ci";
 import { IoIosAddCircleOutline } from "react-icons/io";
+import Button from 'react-bootstrap/esm/Button';
 
 
 export const CreatePost = () => {
@@ -21,9 +22,14 @@ export const CreatePost = () => {
                 </Form>
             </div>
             <div className="lower flex">
-                <button className=' w-50 ' style={{fontSize:"17px"}}> <CiImageOn  className='icons mx-1' /> image</button>
-                <button className=' w-50 ' style={{fontSize:"17px"}}> <IoIosAddCircleOutline  className='icons mx-1'/>
-                Post</button>
+                <Button variant="primary" className='w-50'>
+                    <label htmlFor="imageInput" className='w-100'>
+                        Upload image <CiImageOn  className='icons'  />
+                    </label>
+                </Button>
+                <input id='imageInput' type="file" placeholder='email' />
+                <button className='w-50 ' style={{ fontSize: "17px" }}> <IoIosAddCircleOutline className='icons mx-1' />
+                    Post</button>
             </div>
         </div >
     )
